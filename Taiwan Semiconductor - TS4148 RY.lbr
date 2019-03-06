@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="TAIWAN_SEMICONDUCTOR_TS4148_RY_0">
+                    <description>150mA, 75V Switching Diode</description>
+                    <wire layer="51" y2="0.625" width="0.15" x2="-1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.15" x2="1.0" y1="0.625" x1="-1.0"/>
+                    <wire layer="51" y2="-0.625" width="0.15" x2="1.0" y1="0.625" x1="1.0"/>
+                    <wire layer="51" y2="-0.625" width="0.15" x2="-1.0" y1="-0.625" x1="1.0"/>
+                    <wire layer="41" y2="0.825" width="0.1" x2="-1.75" y1="-0.825" x1="-1.75"/>
+                    <wire layer="41" y2="0.825" width="0.1" x2="1.75" y1="0.825" x1="-1.75"/>
+                    <wire layer="41" y2="-0.825" width="0.1" x2="1.75" y1="0.825" x1="1.75"/>
+                    <wire layer="41" y2="-0.825" width="0.1" x2="-1.75" y1="-0.825" x1="1.75"/>
+                    <text layer="25" align="bottom-left" y="-0.3" x="1.95" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="-0.025" x="-2.225" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.2" dy="1.2" y="0.0" x="-1.05" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="1.2" dy="1.2" y="0.0" x="1.05" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="TAIWAN_SEMICONDUCTOR_TS4148_RY_0_0">
+                    <description>150mA, 75V Switching Diode</description>
+                    <wire layer="94" y2="-7.62" width="0.508" x2="2.54" y1="-2.54" x1="2.54"/>
+                    <wire layer="94" y2="-7.62" width="0.508" x2="7.62" y1="-2.54" x1="7.62"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="7.62" y1="-2.54" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="7.62" y1="-7.62" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.15" x2="2.54" y1="-5.08" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.15" x2="7.62" y1="-5.08" x1="7.62"/>
+                    <text layer="95" align="top-left" y="0.508" x="1.016" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-8.636" x="-1.27" rot="R0" size="2.54">TS4148 RY</text>
+                    <pin name="ANODE" visible="pad" length="middle" y="-5.08" x="-2.54"/>
+                    <pin name="CATHODE" visible="pad" length="middle" y="-5.08" x="12.7" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="D" name="TAIWAN_SEMICONDUCTOR_TS4148_RY">
+                    <description>150mA, 75V Switching Diode</description>
+                    <gates>
+                        <gate name="G$0" symbol="TAIWAN_SEMICONDUCTOR_TS4148_RY_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="TAIWAN_SEMICONDUCTOR_TS4148_RY_0_0" package="TAIWAN_SEMICONDUCTOR_TS4148_RY_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="CATHODE"/>
+                                <connect gate="G$0" pad="2" pin="ANODE"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="MPN" value="TS4148 RY"/>
+                                    <attribute name="mouser_part_number" value="821-TS4148-0805-RY"/>
+                                    <attribute name="temperature_range_low" value="-55°C"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="lead_free" value="yes"/>
+                                    <attribute name="rohs" value="yes"/>
+                                    <attribute name="prefix" value="D"/>
+                                    <attribute name="mfg_package_ident" value="0805"/>
+                                    <attribute name="MF" value="Taiwan Semiconductor"/>
+                                    <attribute name="package" value="0805 (2012 metric)"/>
+                                    <attribute name="datasheet" value="http://www.taiwansemi.com/products/datasheet/TS4148%20RYG_M1612.pdf"/>
+                                    <attribute name="temperature_range_high" value="+175°C"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
